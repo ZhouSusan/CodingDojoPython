@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-left: 300px;
+}
+
+#top-header > a {
+    position: relative;
+    left: 450px;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #0000EE;
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Show html  */
+
+.home-link {
+    position: relative;
+    left: 300px;
+    bottom: 20px
+}
+
+/* Edit Html */
+.show-user {
+    position: relative;
+    left: 200px;
+}

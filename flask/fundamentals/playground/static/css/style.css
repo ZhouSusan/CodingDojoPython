@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 40px;
+    background-color: rgb(96, 156, 224);
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}

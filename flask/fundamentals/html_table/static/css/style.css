@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#container {
+  width: 800px;
+  margin-left: 400px;
+}
+
+th,
+tr {
+  height: 60px;
+}

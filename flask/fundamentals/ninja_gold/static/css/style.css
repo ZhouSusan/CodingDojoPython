@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 1200px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#selection {
+    display: flex;
+    flex-direction: row;
+}
+
+#selection > div {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+#activity {
+    width: 800px;
+    height: 160px;
+    border: 1px black solid;
+}
+
+h1, label {
+    font-size: x-large;
+}

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.container > div >p {
+    text-align: center;
+}
+
+.go-back-btn {
+    position: relative;
+    top: 600px;
+    right: 1000px;
+}
+
+.order_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_info {
+    border: 2px solid black;
+    margin-top: 60px;
+}

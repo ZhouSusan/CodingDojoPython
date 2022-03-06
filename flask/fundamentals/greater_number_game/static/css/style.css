@@ -1,0 +1,49 @@
+#container {
+    width: 1200px;
+    margin-left: 500px;
+}
+
+.guess-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 60px;
+    background-color: green;
+}
+
+input {
+    width: 300px;
+}
+
+.btn {
+    width: 100px;
+    margin-top: 30px;
+    background-color: yellow;
+}
+
+.guess-high, .guess-low{
+    margin-top: 20px;
+    width: 400px;
+    height: 230px;
+    background-color: red;
+    padding-top: 100px;
+}
+
+.guess-high > p,
+.guess-low > p,
+.guess-box > form > p {
+    text-align: center;
+}
+
+p, label {
+    font-size: x-large;
+}
+
+.clear-btn{
+    width: 100px;
+    height: 40px;
+    margin-left: 150px;
+    background-color: blue;
+}

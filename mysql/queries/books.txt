@@ -1,0 +1,61 @@
+SET SQL_SAFE_UPDATES = 0;
+
+-- Create 5 different authors
+INSERT INTO Authors (name) VALUES ("JANE Austen");
+INSERT INTO Authors (name) VALUES ("Emily Dickinson");
+INSERT INTO Authors (name) VALUES ("Fyodor Dostoevsky");
+INSERT INTO Authors (name) VALUES ("William Shakespeare");
+INSERT INTO Authors (name) VALUES ("Lau Tzu");
+
+-- Create 5 books with the following names: C Sharp, Java, Python, PHP, Ruby
+INSERT INTO Books (title) VALUES ("C Sharp");
+INSERT INTO Books (title) VALUES ("Java");
+INSERT INTO Books (title) VALUES ("Python");
+INSERT INTO Books (title) VALUES ("PHP");
+INSERT INTO Books (title) VALUES ("Ruby");
+
+-- Change the name of the C Sharp book to C#
+UPDATE Books SET title = "C#" WHERE id=1; 
+
+-- Change the first name of the 4th author to Bill
+UPDATE Authors SET name = "Bill Shakespeare" WHERE id=4;
+
+-- Have the first author favorite the first 2 books
+INSERT INTO Favorites (author_id, book_id) VALUES (1, 1);
+INSERT INTO Favorites (author_id, book_id) VALUES (1, 2);
+
+-- Have the second author favorite the first 3 books
+INSERT INTO Favorites (author_id, book_id) VALUES (2, 1);
+INSERT INTO Favorites (author_id, book_id) VALUES (2, 2);
+INSERT INTO Favorites (author_id, book_id) VALUES (2, 3);
+
+-- Have the third author favorite the first 4 books
+INSERT INTO Favorites (author_id, book_id) VALUES (3, 1);
+INSERT INTO Favorites (author_id, book_id) VALUES (3, 2);
+INSERT INTO Favorites (author_id, book_id) VALUES (3, 3);
+INSERT INTO Favorites (author_id, book_id) VALUES (3, 4);
+
+-- Have the fourth author favorite all the books
+INSERT INTO Favorites (author_id, book_id) VALUES (4, 1);
+INSERT INTO Favorites (author_id, book_id) VALUES (4, 2);
+INSERT INTO Favorites (author_id, book_id) VALUES (4, 3);
+INSERT INTO Favorites (author_id, book_id) VALUES (4, 4);
+INSERT INTO Favorites (author_id, book_id) VALUES (4, 5);
+
+-- Retrieve all the authors who favorited the 3rd book
+SELECT * FROM Favorites WHERE book_id=3;  
+
+-- Remove the first author of the 3rd book's favorites
+DELETE FROM Favorites WHERE book_id=3 and author_id=2;
+
+-- Add the 5th author as an other who favorited the 2nd book
+INSERT INTO Favorites (author_id, book_id) VALUES (5, 2);
+
+-- Find all the books that the 3rd author favorited
+SELECT * FROM Favorites WHERE author_id=3;
+
+-- Find all the authors that favorited to the 5th book
+SELECT * FROM Favorites WHERE book_id=5;
+
+
+

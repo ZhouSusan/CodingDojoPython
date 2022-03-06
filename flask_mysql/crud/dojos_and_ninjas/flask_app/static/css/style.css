@@ -1,0 +1,28 @@
+* {
+    padding:0;
+    margin: 0
+}
+
+/* displays_dojo */
+#container {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+}
+
+#left-col {
+    width: 33%;
+}
+
+#right-col{
+    width:66%
+}
+.dojo-list {
+    width: 400px;
+    border: 1px solid black;
+}
+
+.dojo-list > ul {
+    display: flex;
+    flex-direction: column;
+}

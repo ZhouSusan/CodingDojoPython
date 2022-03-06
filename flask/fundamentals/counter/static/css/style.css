@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.add-btn, .reset-btn {
+    width: 100px;
+    height: 40px;
+}
+
+.add-btn {
+    background-color: brown;
+    position: relative;
+    left: 800px;
+    margin-top: 40px;
+} 
+
+.reset-btn, .increment-form {
+    position: relative;
+    left: 1000px;
+    bottom: 40px;
+}
+
+.reset-btn {
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+      height: 50px;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: red;
+      background-color: black;
+  }
+  
+  .color1 {
+      height: 80px;
+      width: 80px;
+      background-color: black;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .color0 {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+  }
